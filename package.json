@@ -16,7 +16,7 @@
     "dev": "node --watch src/index.js",
     "postinstall": "cd gui && npm install",
     "app": "concurrently --kill-others --names \"SERVER,GUI\" -c \"bgBlue.bold,bgMagenta.bold\" \"npm start\" \"npm run gui:dev\"",
-    "gui:dev": "wait-on http://localhost:8080 && cd gui && npm run dev -- --open",
+    "gui:dev": "wait-on http://localhost:8080/health && cd gui && npm run dev -- --open",
     "accounts": "node src/cli/accounts.js",
     "accounts:add": "node src/cli/accounts.js add",
     "accounts:list": "node src/cli/accounts.js list",
