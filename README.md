@@ -6,8 +6,6 @@ A local proxy server with a **Web GUI** that exposes an **Anthropic-compatible A
 
 > **Note:** This is a local development tool. Clone the repository to use it - not available as an npm package.
 
-![Antigravity Claude Proxy Banner](images/banner.png)
-
 ## ✨ Features
 
 - 🎨 **Web GUI** - Beautiful chat interface with account management
@@ -84,21 +82,6 @@ Then add accounts via CLI:
 ```bash
 npm run accounts:add
 ```
-
----
-
-- 💬 **Chat Interface** - Interactive chat with Claude models
-- 📊 **Status Monitoring** - Real-time server and account status
-- 🔄 **Model Selection** - Switch between available models
-- 📝 **Chat History** - Saved conversations in localStorage
-
-### GUI Features
-
-- **Add Accounts**: Click "+" → Authenticate with Google → Start chatting
-- **Select Models**: Choose from dropdown in header
-- **New Conversations**: Click "+ New Chat" button
-- **View History**: Access previous conversations from sidebar
-- **System Status**: Green dot = connected, Red dot = disconnected
 
 ---
 
@@ -230,7 +213,7 @@ Restart your terminal for changes to take effect.
 
 ```bash
 # Make sure the proxy is running first
-antigravity-claude-proxy start
+npm start
 
 # In another terminal, run Claude Code
 claude
@@ -351,7 +334,7 @@ With multiple accounts, the proxy automatically switches to the next available a
 Re-authenticate the account:
 
 ```bash
-antigravity-claude-proxy accounts
+npm run accounts
 # Choose "Re-authenticate" for the invalid account
 ```
 
@@ -411,9 +394,3 @@ This project is based on insights and code from:
 ## License
 
 MIT
-
----
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=AMOHAMMEDIMRAN/antigravity-claude-proxy&type=date&legend=top-left&cache-control=no-cache)](https://www.star-history.com/#AMOHAMMEDIMRAN/antigravity-claude-proxy&type=date&legend=top-left)
